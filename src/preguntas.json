@@ -1,0 +1,1179 @@
+[
+  {
+    "question": "¿Cuál de las siguientes opciones declara correctamente una variable inmutable en Kotlin?",
+    "options": [
+      "var name = \"John\"",
+      "let name = \"John\"",
+      "val name = \"John\"",
+      "const name = \"John\""
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuáles de las siguientes afirmaciones sobre la seguridad frente a nulos en Kotlin son verdaderas?",
+    "options": [
+      "Las variables no aceptan null por defecto",
+      "El operador Elvis (?:) puede usarse para dar un valor por defecto",
+      "Se puede asignar null a cualquier variable sin restricciones",
+      "El operador !! fuerza la aserción de no nulo"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "question": "¿Qué imprimirá este código?\nval name: String? = null\nprintln(name ?: \"No name provided\")",
+    "options": [
+      "null",
+      "No name provided",
+      "name",
+      "Error de compilación"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál de las siguientes describe mejor la diferencia entre arrayOf y listOf en Kotlin?",
+    "options": [
+      "arrayOf es inmutable, listOf es mutable",
+      "arrayOf admite tipos mezclados, listOf no",
+      "listOf es una colección inmutable, arrayOf crea un array de tamaño fijo",
+      "arrayOf es solo para enteros, listOf es genérico"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué imprimirá este código?\nval result = 35 * 2\nprintln(result)",
+    "options": [
+      "16",
+      "13",
+      "11",
+      "Error de compilación"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué expresión usa correctamente el operador Elvis para proporcionar un valor por defecto?",
+    "options": [
+      "val result = name ! \"default\"",
+      "val result = name ?: \"default\"",
+      "val result = name ?= \"default\"",
+      "val result = name else \"default\""
+    ],
+    "correct": 1
+  },
+  {
+    "question": "La sentencia when en Kotlin puede reemplazar múltiples condiciones if/else.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál es la principal diferencia entre val y var en Kotlin?",
+    "options": [
+      "val es mutable, var es inmutable",
+      "val se puede reasignar, var no",
+      "val es inmutable (solo lectura), var es mutable",
+      "val se usa solo en parámetros de funciones"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la forma correcta de definir una función con un parámetro por defecto en Kotlin?",
+    "options": [
+      "fun greet(name: String = \"User\") { println(\"Hi, $name\") }",
+      "fun greet(String name = \"User\") { println(\"Hi, $name\") }",
+      "fun greet(default name: String = \"User\") { println(\"Hi, $name\") }",
+      "def greet(name: String = \"User\") { println(\"Hi, $name\") }"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué imprimirá esta función?\nfun double(x: Int): Int = x * 2\nprintln(double(4))",
+    "options": [
+      "8",
+      "6",
+      "4",
+      "double"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál de estas define correctamente una función de orden superior?",
+    "options": [
+      "fun operate(a: Int, b: Int): Int = a + b",
+      "fun apply(op: (Int, Int) -> Int, a: Int, b: Int): Int = op(a, b)",
+      "val op = { a: Int, b: Int -> a + b }",
+      "fun add(a: Int, b: Int): op(Int, Int): Int = a + b"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál afirmación sobre el filtrado ansioso vs perezoso es verdadera?",
+    "options": [
+      "Los filtros ansiosos operan sobre secuencias",
+      "Los filtros perezosos solo funcionan con arrays",
+      "Los filtros ansiosos procesan todos los elementos inmediatamente; los perezosos posponen el cálculo hasta que se necesite",
+      "Ambos son equivalentes en Kotlin"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué imprimirá este código?\nval list = listOf(\"a\", \"bb\", \"ccc\")\nval result = list.map { it.length }\nprintln(result)",
+    "options": [
+      "[1, 2, 3]",
+      "[\"a\", \"bb\", \"ccc\"]",
+      "[a, bb, ccc]",
+      "Error de compilación"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué función de Kotlin aplana una lista de listas en una sola lista?",
+    "options": [
+      "collapse()",
+      "flatten()",
+      "reduce()",
+      "group()"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es una definición compacta de una función que devuelve la suma de dos enteros?",
+    "options": [
+      "fun add(a: Int, b: Int): Int = a + b",
+      "fun add(a: Int, b: Int) = println(a + b)",
+      "add = (a, b) -> a + b",
+      "function add(a, b) { return a + b }"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué imprimirá este código?\nval list = listOf(1, 2, 3, 4, 5)\nval even = list.filter { it % 2 == 0 }\nprintln(even)",
+    "options": [
+      "[2, 4]",
+      "[1, 3, 5]",
+      "2, 4",
+      "Error: filter no está disponible en list"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué permiso se debe declarar en AndroidManifest.xml para acceder a internet?",
+    "options": [
+      "a) android.permission.WIFI_ACCESS",
+      "b) android.permission.INTERNET",
+      "c) android.permission.ACCESS_NETWORK",
+      "d) android.permission.INTERNET_ACCESS"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Por qué algunos permisos como el acceso a Internet se conceden automáticamente mientras que otros (como la cámara) requieren petición en tiempo de ejecución?",
+    "options": [
+      "a) Todos los permisos deben solicitarse en tiempo de ejecución",
+      "b) Solo las apps del sistema pueden usar permisos en tiempo de ejecución",
+      "c) Depende del nivel de protección del permiso (normal vs. peligroso)",
+      "d) Los permisos peligrosos solo se requieren en dispositivos con root"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Intentas cargar datos desde una API pública y obtienes un NetworkOnMainThreadException. ¿Cuál es el problema?",
+    "options": [
+      "a) La URL no es válida",
+      "b) Se intenta realizar una operación de red en el hilo principal",
+      "c) No has definido un ViewModel",
+      "d) Retrofit no soporta llamadas GET"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuáles son componentes clave para configurar un cliente Retrofit? (Selecciona todas las que apliquen)",
+    "options": [
+      "Base URL",
+      "Interfaz Retrofit con anotaciones HTTP",
+      "JSON converter factory",
+      "DAO"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "question": "¿Qué anotación se usa en una interfaz Retrofit para realizar una solicitud GET?",
+    "options": [
+      "a) @Request(\"GET\")",
+      "b) @HttpGet",
+      "c) @GET",
+      "d) @getRequest"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué debes hacer para que Retrofit convierta automáticamente JSON en clases de datos de Kotlin?",
+    "options": [
+      "a) Usar una interfaz DAO",
+      "b) Añadir un convertidor como Moshi o Gson",
+      "c) Declarar los datos como MutableLiveData",
+      "d) Usar LiveData directamente en la interfaz"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué es Moshi y por qué se usa con Retrofit?",
+    "options": [
+      "a) Un reemplazo para Retrofit",
+      "b) Un planificador de corutinas",
+      "c) Una librería de serialización/deserialización JSON",
+      "d) Un emulador de servidor web"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Tienes la siguiente interfaz Retrofit: `@GET(\"users\") suspend fun getUsers(): List<User>`. ¿Cuál es el tipo de retorno?",
+    "options": [
+      "a) Call<List<User>>",
+      "b) Deferred<List<User>>",
+      "c) LiveData<List<User>>",
+      "d) List<User>"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "¿Cómo completas correctamente la llamada a Glide para mostrar una imagen?\n\nGlide.with(context)\n    .load(\"https://example.com/image.png\")\n    .into(_________)",
+    "options": [
+      "a) context",
+      "b) \"https://example.com/image.png\"",
+      "c) imageView",
+      "d) R.drawable.image"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el propósito de usar .apply(RequestOptions().placeholder(R.drawable.loading)) con Glide?",
+    "options": [
+      "a) Cambiar el tamaño de la imagen",
+      "b) Especificar una imagen temporal mientras carga",
+      "c) Aplicar un filtro en la imagen",
+      "d) Establecer la URL base"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Dónde se agregan normalmente las dependencias de Glide y Retrofit?",
+    "options": [
+      "a) AndroidManifest.xml",
+      "b) gradle.properties",
+      "c) build.gradle",
+      "d) res/values/strings.xml"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuáles son dos buenas prácticas al trabajar con permisos de Internet y solicitudes de red? (Selecciona todas las que apliquen)",
+    "options": [
+      "Declarar el permiso INTERNET en el AndroidManifest.xml",
+      "Realizar operaciones de red fuera del hilo principal",
+      "Solicitar siempre permisos peligrosos en tiempo de ejecución, incluso INTERNET",
+      "Evitar Retrofit y usar sockets directamente"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "question": "¿Qué ocurre si defines tanto un atributo en línea como un estilo en una vista?",
+    "options": [
+      "a) El estilo sobrescribe el atributo en línea",
+      "b) El atributo en línea tiene prioridad",
+      "c) El resultado es indefinido",
+      "d) Solo se aplica el tema"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la diferencia entre un estilo y un tema en Android?",
+    "options": [
+      "a) Un estilo define solo atributos visuales de una vista, mientras que un tema aplica estilos globalmente a toda la app o actividad",
+      "b) Un tema define animaciones y un estilo solo colores",
+      "c) Un estilo se usa solo en código y un tema solo en XML",
+      "d) No hay diferencia entre ambos"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Dónde se suelen declarar los recursos de color y dimensión en una app Android?",
+    "options": [
+      "a) En archivos XML ubicados en res/values",
+      "b) En el manifiesto de la aplicación",
+      "c) En la clase MainActivity",
+      "d) En archivos .kt"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué unidad deberías usar para definir el tamaño de fuente y asegurar accesibilidad?",
+    "options": [
+      "a) px",
+      "b) dp",
+      "c) sp",
+      "d) pt"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la forma correcta de aplicar un estilo de texto definido en el tema a un TextView?",
+    "options": [
+      "a) style=\"?android:style/TextStyle\"",
+      "b) style=\"@style/TextAppearance.AppCompat.Body1\"",
+      "c) style=\"?theme/TextSize.H1\"",
+      "d) style=\"TextSize.Hello\""
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Para qué se utilizan los estilos de tipo TextAppearance en Android?",
+    "options": [
+      "a) Para definir colores de fondo globales",
+      "b) Para aplicar estilos de texto como tamaño, tipo de fuente y color",
+      "c) Para definir animaciones de los botones",
+      "d) Para declarar strings localizados"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el propósito de Material Components en el desarrollo Android?",
+    "options": [
+      "a) Definir la lógica de negocio",
+      "b) Cargar datos de red",
+      "c) Construir interfaces usando principios de Material Design",
+      "d) Implementar persistencia con Room"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el método correcto para mostrar un Snackbar en un fragmento?",
+    "options": [
+      "a) Snackbar.show(requireContext())",
+      "b) Snackbar.display(\"Mensaje\")",
+      "c) Snackbar.make(requireView(), \"Mensaje\", Snackbar.LENGTH_SHORT).show()",
+      "d) Snackbar.toast(requireActivity(), \"Mensaje\")"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué componentes de Material Design se usan comúnmente para la interacción con el usuario? (Selecciona todas las que apliquen)",
+    "options": [
+      "FloatingActionButton",
+      "Snackbar",
+      "CardView",
+      "ViewModel"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "question": "¿Por qué deberías proporcionar recursos alternativos para dimensiones, layouts o cadenas de texto?",
+    "options": [
+      "a) Para reducir el tamaño del APK",
+      "b) Para facilitar la depuración de la app",
+      "c) Para mejorar la compatibilidad con distintos idiomas, tamaños de pantalla y configuraciones",
+      "d) Para cumplir con las directrices de Google Play"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cómo defines recursos de cadenas alternativos para la localización en español?",
+    "options": [
+      "a) res/strings-spanish.xml",
+      "b) res/values-es/strings.xml",
+      "c) res/locale/es/strings.xml",
+      "d) res/intl/strings-es.xml"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué debes hacer para dar soporte a idiomas con escritura de derecha a izquierda (RTL) en tu layout?",
+    "options": [
+      "a) Usar start/end en lugar de left/right en los atributos de diseño",
+      "b) Reescribir todos los layouts para cada idioma",
+      "c) Definir estilos alternativos por idioma",
+      "d) Invertir las imágenes horizontalmente"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué imprimirá este código?\n\n```kotlin\nclass User(val name: String) {\n    init { println(\"User created: $name\") }\n}\n\nfun main() {\n    val u = User(\"Alice\")\n}\n```",
+    "options": [
+      "a) Nada — los bloques init no se ejecutan",
+      "b) Imprime User created: Alice",
+      "c) Error de compilación — falta constructor",
+      "d) Imprime null"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el propósito del bloque init en Kotlin?",
+    "options": [
+      "a) Inicializar propiedades o ejecutar lógica al crear una instancia",
+      "b) Declarar variables globales",
+      "c) Reemplazar el constructor secundario",
+      "d) Definir métodos estáticos"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál de las siguientes definiciones es válida para una clase con constructor primario y secundario?",
+    "options": [
+      "a)\n```kotlin\nclass A(val x: Int) {\n  constructor() : this(0)\n}\n```",
+      "b)\n```kotlin\nclass A {\n  constructor(x: Int)\n  constructor()\n}\n```",
+      "c)\n```kotlin\nclass A(x: Int = 0)\n```",
+      "d)\n```kotlin\nclass A(x: Int) {\n  constructor(x: Int = 0)\n}\n```"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Este código compila, pero el valor impreso no es el esperado. ¿Cuál es el problema?\n\n```kotlin\nclass Box {\n  var size: Int = 0\n    get() = field * 2\n}\n\nfun main() {\n  val box = Box()\n  box.size = 5\n  println(box.size)\n}\n```",
+    "options": [
+      "a) El getter modifica el valor interno y no refleja el asignado",
+      "b) El campo \"field\" no se actualiza automáticamente",
+      "c) Falta el setter",
+      "d) No hay problema en el código"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué palabra clave permite que una clase se pueda heredar en Kotlin?",
+    "options": [
+      "a) inherit",
+      "b) extends",
+      "c) open",
+      "d) virtual"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué imprimirá este código?\n\n```kotlin\nopen class Animal {\n  open fun speak() = \"Generic sound\"\n}\n\nclass Dog : Animal() {\n  override fun speak() = \"Woof\"\n}\n\nfun main() {\n  val a: Animal = Dog()\n  println(a.speak())\n}\n```",
+    "options": [
+      "a) Generic sound",
+      "b) Woof",
+      "c) Dog",
+      "d) Error de compilación"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué imprimirá este código?\n\n```kotlin\nfun String.shout() = this.uppercase()+\"!\"\n\nfun main() {\n  println(\"hello\".shout())\n}\n```",
+    "options": [
+      "a) HELLO",
+      "b) hello!",
+      "c) HELLO!",
+      "d) Error de compilación"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuáles de las siguientes afirmaciones sobre `object` en Kotlin son correctas?",
+    "options": [
+      "Se usan para declarar singletons",
+      "Un object puede implementar interfaces",
+      "Puedes instanciar múltiples veces una clase object",
+      "Los miembros de companion object pueden acceder a miembros privados de la clase exterior"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "question": "¿Cuál es una razón habitual para usar una data class en Kotlin?",
+    "options": [
+      "a) Para heredar de múltiples clases",
+      "b) Para declarar objetos estáticos",
+      "c) Para obtener automáticamente equals, hashCode y toString()",
+      "d) Para declarar una clase abstracta"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Tienes: una data class `Student`, una enum `Level`, una función `calculateGrade()` y un companion object en `University`. ¿Cuál es la organización correcta?",
+    "options": [
+      "a) Todo puede ir en un solo archivo, con un paquete declarado al inicio",
+      "b) Cada elemento debe ir en un archivo distinto",
+      "c) Los companion objects deben ir fuera de la clase",
+      "d) La enum debe estar dentro de `Student`"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Quieres que `Student` sea visible solo dentro del módulo actual. ¿Qué modificador debes usar?",
+    "options": [
+      "a) internal",
+      "b) private",
+      "c) protected",
+      "d) sealed"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál es la función principal del archivo AndroidManifest.xml en una app Android?",
+    "options": [
+      "a) Define el contenido del layout principal",
+      "b) Especifica componentes, permisos y configuraciones esenciales de la app",
+      "c) Contiene los textos traducidos",
+      "d) Declara las vistas que se usarán en la interfaz"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones sobre las Activities es correcta?",
+    "options": [
+      "a) Una app debe tener exactamente una Activity",
+      "b) Las Activities se lanzan desde Gradle",
+      "c) Las Activities definen la interfaz y lógica de una pantalla",
+      "d) Las Activities se declaran en el archivo build.gradle"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Creas un TextView en tu archivo de layout. ¿En qué directorio de recursos debe estar?",
+    "options": [
+      "a) res/raw",
+      "b) res/layout",
+      "c) res/values",
+      "d) res/drawable"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué se mostrará en pantalla con el siguiente XML?\n\n<TextView android:id=\"@+id/helloText\" android:layout_width=\"wrap_content\" android:layout_height=\"wrap_content\" android:text=\"Welcome!\" />",
+    "options": [
+      "a) El texto \"Welcome!\"",
+      "b) Nada, porque falta el atributo id",
+      "c) El ID del TextView",
+      "d) Un error de compilación"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué hace el siguiente código?\n\nval textView = findViewById<TextView>(R.id.helloText)\ntextView.text = \"New Text\"",
+    "options": [
+      "a) Lanza una excepción si helloText no existe",
+      "b) Cambia el título de la app",
+      "c) Modifica el contenido de un TextView",
+      "d) Crea un nuevo TextView"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál de las siguientes afirmaciones describe mejor la inicialización tardía (lateinit) en Kotlin?",
+    "options": [
+      "a) Permite declarar variables no nulas sin inicializarlas inmediatamente",
+      "b) Indica que la variable no puede cambiar",
+      "c) Es equivalente a lazy",
+      "d) Se usa para declarar arrays"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Agregas un botón en XML, pero al pulsarlo no ocurre nada. ¿Cuál puede ser la causa?",
+    "options": [
+      "Falta el atributo android:onClick en el XML",
+      "No se ha inflado el layout correctamente",
+      "No se ha definido el listener en la Activity"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "question": "¿Cuál es la forma correcta de asignar un listener de clic en Kotlin?",
+    "options": [
+      "a) myButton.setText()",
+      "b) myButton.setOnClickListener()",
+      "c) myButton.setOnClickListener { ... }",
+      "d) myButton.text = \"Click\""
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la función principal de Gradle en el desarrollo de apps Android?",
+    "options": [
+      "a) Organizar los archivos XML",
+      "b) Gestionar la compilación y las dependencias del proyecto",
+      "c) Ejecutar la aplicación en un dispositivo",
+      "d) Sincronizar las actividades"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué indica esta línea en build.gradle?\n\nimplementation \"androidx.core:core-ktx:1.10.1\"",
+    "options": [
+      "a) Añade una dependencia de biblioteca Kotlin",
+      "b) Declara un plugin",
+      "c) Establece el nivel mínimo de API",
+      "d) Compila los layouts XML"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Tu app no compila y muestra el error \"cannot find symbol R\". ¿Cuál es la causa más probable?",
+    "options": [
+      "a) Error de sincronización de Gradle",
+      "b) XML mal formado",
+      "c) Recurso sin identificador (id)",
+      "d) Cualquiera de las anteriores"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "¿Por qué se desaconsejan layouts profundamente anidados en Android?",
+    "options": [
+      "a) Aumentan la complejidad del código innecesariamente",
+      "b) Consumen más recursos y ralentizan el renderizado de la vista",
+      "c) Solo funcionan en versiones antiguas de Android",
+      "d) Ocupan más memoria de almacenamiento"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué tipo de layout es más adecuado para reducir la profundidad de la jerarquía de vistas manteniendo una alineación flexible?",
+    "options": [
+      "a) LinearLayout",
+      "b) RelativeLayout",
+      "c) ConstraintLayout",
+      "d) FrameLayout"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué significa el atributo app:layout_constraintTop_toBottomOf=\"@id/header\" en ConstraintLayout?",
+    "options": [
+      "a) Coloca la vista actual encima del elemento con id header",
+      "b) Centra la vista dentro del contenedor",
+      "c) Conecta el borde superior de esta vista con el borde inferior de la vista con id header",
+      "d) Aplica padding a la parte superior de la vista"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál de los siguientes no es un estado del ciclo de vida de una Activity?",
+    "options": [
+      "a) onCreate",
+      "b) onStart",
+      "c) onExecute",
+      "d) onDestroy"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿En qué estado se encuentra una Activity cuando el usuario puede interactuar con ella?",
+    "options": [
+      "a) Started",
+      "b) Resumed",
+      "c) Paused",
+      "d) Created"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué método del ciclo de vida se llama justo antes de que la Activity deje de ser visible?",
+    "options": [
+      "a) onPause()",
+      "b) onStop()",
+      "c) onDestroy()",
+      "d) onRestart()"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Al girar la pantalla, la Activity se destruye y se vuelve a crear por defecto.",
+    "options": [
+      "a) Verdadero",
+      "b) Falso"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué componente se utiliza para navegar de una Activity a otra?",
+    "options": [
+      "a) ContentProvider",
+      "b) Intent",
+      "c) Messenger",
+      "d) BroadcastReceiver"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cómo se inicia una nueva Activity llamada DetailActivity desde MainActivity?",
+    "options": [
+      "a) start(DetailActivity)",
+      "b) startActivity(Intent(this, DetailActivity::class.java))",
+      "c) DetailActivity.launch()",
+      "d) Intent.launch(this, DetailActivity)"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la diferencia entre un Intent explícito y uno implícito?",
+    "options": [
+      "a) El explícito especifica la clase de destino; el implícito solicita una acción sin nombrar una app específica",
+      "b) El explícito se usa para servicios y el implícito para actividades",
+      "c) El implícito siempre lleva datos adicionales (Extras)",
+      "d) No hay diferencia técnica"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cómo se envían datos adicionales (como un ID de usuario) a través de un Intent?",
+    "options": [
+      "a) Usando intent.putValue(\"key\", value)",
+      "b) Usando intent.putExtra(\"key\", value)",
+      "c) Declarando una variable global",
+      "d) Guardándolo en la base de datos"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué componente permite a los usuarios navegar hacia atrás en la jerarquía de pantallas dentro de una app?",
+    "options": [
+      "a) Navigation Drawer",
+      "b) Up Button (flecha en la barra de la app)",
+      "c) Bottom Navigation",
+      "d) Home Button"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál de estas opciones describe mejor el componente ViewModel?",
+    "options": [
+      "a) Gestiona la base de datos local",
+      "b) Almacena y gestiona datos relacionados con la interfaz de manera consciente del ciclo de vida",
+      "c) Dibuja los elementos en la pantalla",
+      "d) Realiza peticiones de red directamente"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Por qué es útil el ViewModel durante un cambio de configuración (como girar el dispositivo)?",
+    "options": [
+      "a) Porque el ViewModel se reinicia automáticamente",
+      "b) Porque los datos en el ViewModel sobreviven a la recreación de la Activity",
+      "c) Porque el ViewModel detiene la rotación de pantalla",
+      "d) Porque guarda los datos en un archivo de texto"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Un ViewModel debe contener referencias a Context o Views (como TextView) para actualizarlas directamente.",
+    "options": [
+      "a) Verdadero",
+      "b) Falso (puede causar fugas de memoria)"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué es LiveData en Android?",
+    "options": [
+      "a) Una base de datos en tiempo real",
+      "b) Una clase de contenedor de datos observable consciente del ciclo de vida",
+      "c) Un tipo de Intent",
+      "d) Un reemplazo de la Activity"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la diferencia entre MutableLiveData y LiveData?",
+    "options": [
+      "a) MutableLiveData es de solo lectura; LiveData se puede modificar",
+      "b) MutableLiveData permite cambiar su valor; LiveData es una versión de solo lectura (generalmente para la vista)",
+      "c) LiveData solo funciona con cadenas de texto",
+      "d) Son exactamente lo mismo"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Si una Activity está en estado 'Stopped', ¿recibirá actualizaciones de LiveData?",
+    "options": [
+      "a) Sí, siempre",
+      "b) No, LiveData solo notifica a observadores en estado activo (Started o Resumed)",
+      "c) Solo si se fuerza la actualización",
+      "d) Solo si la Activity está en segundo plano"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el propósito principal de Data Binding?",
+    "options": [
+      "a) Conectar la app a una API",
+      "b) Vincular componentes de la interfaz de usuario en los layouts con fuentes de datos de la app de forma declarativa",
+      "c) Encriptar datos de usuario",
+      "d) Generar automáticamente la documentación del código"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué etiqueta XML se debe usar como raíz para habilitar Data Binding en un archivo de layout?",
+    "options": [
+      "a) <ConstraintLayout>",
+      "b) <layout>",
+      "c) <databinding>",
+      "d) <view>"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la sintaxis correcta en el XML para vincular el valor de una variable llamada 'user'?",
+    "options": [
+      "a) android:text=\"user.name\"",
+      "b) android:text=\"@{user.name}\"",
+      "c) android:text=\"${user.name}\"",
+      "d) android:text=\"#user.name\""
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la ventaja de usar fragmentos en lugar de múltiples actividades?",
+    "options": [
+      "a) Los fragmentos son más pesados que las actividades",
+      "b) Permiten una interfaz más modular y adaptable a diferentes tamaños de pantalla",
+      "c) No tienen ciclo de vida",
+      "d) No requieren ser declarados en el Manifiesto"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué componente gestiona la pila de fragmentos y las transiciones entre ellos?",
+    "options": [
+      "a) ActivityManager",
+      "b) IntentManager",
+      "c) FragmentManager",
+      "d) ViewManager"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿En qué método del ciclo de vida de un Fragment se debe inflar su layout XML?",
+    "options": [
+      "a) onCreate()",
+      "b) onStart()",
+      "c) onCreateView()",
+      "d) onAttach()"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la función principal del Navigation Component en Android Jetpack?",
+    "options": [
+      "a) Gestionar la conexión Bluetooth",
+      "b) Simplificar la implementación de la navegación, desde clics en botones hasta comportamientos complejos",
+      "c) Reemplazar el archivo AndroidManifest.xml",
+      "d) Controlar el volumen del dispositivo"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué archivo XML define visualmente todos los destinos y rutas de navegación de la app?",
+    "options": [
+      "a) nav_graph.xml",
+      "b) destinations.xml",
+      "c) routes.xml",
+      "d) main_activity.xml"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué widget actúa como contenedor vacío donde se intercambian los fragmentos durante la navegación?",
+    "options": [
+      "a) NavGraphView",
+      "b) NavHostFragment",
+      "c) FragmentContainerView",
+      "d) Ambos NavHostFragment y FragmentContainerView (configurados correctamente)"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "Safe Args es un plugin de Gradle que permite pasar datos entre destinos de forma segura mediante tipos.",
+    "options": [
+      "a) Verdadero",
+      "b) Falso"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál es la forma correcta de navegar a un destino con ID 'details' usando un NavController?",
+    "options": [
+      "a) navController.open(R.id.details)",
+      "b) navController.navigate(R.id.details)",
+      "c) navController.goto(R.id.details)",
+      "d) navController.launch(R.id.details)"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál de estas librerías de Jetpack se usa para la persistencia de datos en una base de datos SQLite?",
+    "options": [
+      "a) Retrofit",
+      "b) Glide",
+      "c) Room",
+      "d) WorkManager"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué anotación se usa en Room para definir una clase como una tabla de la base de datos?",
+    "options": [
+      "a) @Database",
+      "b) @Table",
+      "c) @Entity",
+      "d) @Row"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la función del objeto DAO (Data Access Object) en Room?",
+    "options": [
+      "a) Definir la conexión a internet",
+      "b) Proporcionar los métodos para insertar, eliminar y consultar datos",
+      "c) Crear la interfaz de usuario",
+      "d) Gestionar los permisos de la cámara"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la ventaja de que los métodos de Room devuelvan un Flow o LiveData?",
+    "options": [
+      "a) Los datos se cifran automáticamente",
+      "b) La interfaz se actualiza automáticamente cuando cambian los datos en la DB",
+      "c) Permite usar la base de datos sin declarar permisos",
+      "d) No tiene ninguna ventaja especial"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Las operaciones de base de datos con Room deben realizarse en el hilo principal (Main Thread).",
+    "options": [
+      "a) Verdadero",
+      "b) Falso (deben ser asíncronas para no bloquear la UI)"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué componente de Room representa el punto de acceso principal a la base de datos persistente?",
+    "options": [
+      "a) @Entity",
+      "b) @Dao",
+      "c) @Database (clase que extiende RoomDatabase)",
+      "d) RoomBuilder"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué anotación se utiliza en un DAO para obtener todos los registros de una tabla?",
+    "options": [
+      "a) @Insert",
+      "b) @Update",
+      "c) @Query(\"SELECT * FROM table_name\")",
+      "d) @GetAll"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es el propósito del patrón Repository en una aplicación Android?",
+    "options": [
+      "a) Dibujar elementos gráficos complejos",
+      "b) Centralizar el acceso a los datos (red, base de datos local) y mediar entre diferentes fuentes",
+      "c) Gestionar el ciclo de vida de la Activity",
+      "d) Definir los colores de la aplicación"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Por qué el ViewModel no debe comunicarse directamente con la base de datos Room?",
+    "options": [
+      "a) Por razones de seguridad",
+      "b) Para separar responsabilidades y facilitar el mantenimiento y las pruebas",
+      "c) Porque Room solo funciona con Activities",
+      "d) Porque el ViewModel es solo para datos temporales"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el flujo de datos recomendado en una arquitectura MVVM?",
+    "options": [
+      "a) Database -> Repository -> ViewModel -> UI (LiveData/Flow)",
+      "b) UI -> Database -> Repository",
+      "c) ViewModel -> UI -> Repository",
+      "d) UI -> ViewModel -> Database"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál de estas opciones describe mejor una corutina en Kotlin?",
+    "options": [
+      "a) Un hilo pesado del sistema operativo",
+      "b) Un hilo de ejecución ligero y suspendible que simplifica la programación asíncrona",
+      "c) Un tipo de variable inmutable",
+      "d) Una función que solo se ejecuta una vez"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué palabra clave se usa para marcar una función que puede ser pausada y reanudada sin bloquear el hilo?",
+    "options": [
+      "a) async",
+      "b) suspend",
+      "c) wait",
+      "d) pause"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el constructor de corutinas (coroutine builder) que se usa para lanzar una corutina de tipo 'dispara y olvida' (fire and forget)?",
+    "options": [
+      "a) launch",
+      "b) async",
+      "c) runBlocking",
+      "d) await"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué Dispatcher se debe usar para realizar operaciones de red o lectura/escritura de archivos?",
+    "options": [
+      "a) Dispatchers.Main",
+      "b) Dispatchers.IO",
+      "c) Dispatchers.Default",
+      "d) Dispatchers.Unconfined"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es la función del Dispatcher.Main?",
+    "options": [
+      "a) Operaciones intensivas de CPU",
+      "b) Entrada/Salida de datos",
+      "c) Ejecutar corutinas en el hilo principal de la interfaz de usuario",
+      "d) Ejecutar tareas en segundo plano a largo plazo"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "viewModelScope.launch { ... } es útil porque cancela automáticamente las corutinas cuando el ViewModel se destruye.",
+    "options": [
+      "a) Verdadero",
+      "b) Falso"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Cuál es la diferencia entre launch y async?",
+    "options": [
+      "a) No hay diferencia",
+      "b) launch no devuelve un resultado; async devuelve un objeto Deferred que contiene el resultado",
+      "c) launch es solo para la interfaz de usuario",
+      "d) async bloquea el hilo principal"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué hace la función delay(1000) en una corutina?",
+    "options": [
+      "a) Bloquea el hilo actual por un segundo",
+      "b) Suspende la corutina durante un segundo sin bloquear el hilo",
+      "c) Detiene la ejecución de la app",
+      "d) Cierra la corutina permanentemente"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué componente de Android se utiliza para mostrar una lista de datos eficiente y desplazable?",
+    "options": [
+      "a) ListView",
+      "b) ScrollView",
+      "c) RecyclerView",
+      "d) GridView"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Cuál es la función del Adapter en un RecyclerView?",
+    "options": [
+      "a) Definir la orientación de la lista",
+      "b) Conectar los datos con las vistas del RecyclerView",
+      "c) Gestionar el scroll",
+      "d) Almacenar los datos en una base de datos"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué hace el ViewHolder en un RecyclerView?",
+    "options": [
+      "a) Almacena las referencias a las vistas de un solo ítem de la lista para evitar llamadas costosas a findViewById",
+      "b) Crea la base de datos",
+      "c) Gestiona los clics en el botón atrás",
+      "d) Define el tema visual de la lista"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿Qué componente decide cómo se posicionan los ítems dentro del RecyclerView (lineal, cuadrícula, etc.)?",
+    "options": [
+      "a) Adapter",
+      "b) LayoutManager",
+      "c) ViewHolder",
+      "d) Intent"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el beneficio de usar DiffUtil con un RecyclerView?",
+    "options": [
+      "a) Permite cambiar el color de fondo",
+      "b) Calcula las diferencias entre dos listas y actualiza solo los elementos cambiados, mejorando el rendimiento y las animaciones",
+      "c) Permite conectar la lista a Internet",
+      "d) No tiene ningún beneficio real"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Qué método del Adapter se encarga de crear el ViewHolder por primera vez?",
+    "options": [
+      "a) onBindViewHolder()",
+      "b) getItemCount()",
+      "c) onCreateViewHolder()",
+      "d) onLayoutManager()"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "¿Qué método del Adapter se encarga de asociar los datos de una posición específica con las vistas del ViewHolder?",
+    "options": [
+      "a) onCreateViewHolder()",
+      "b) onBindViewHolder()",
+      "c) getItemViewType()",
+      "d) notifyDataSetChanged()"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Tienes un RecyclerView que no muestra nada en pantalla. ¿Cuál de estas razones NO podría ser la causa?",
+    "options": [
+      "a) El adaptador no se ha asignado al RecyclerView",
+      "b) El método getItemCount() devuelve 0",
+      "c) La lista original está vacía",
+      "d) No se ha definido ningún LayoutManager"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Completa la condición para retornar VIEW_TYPE_HEADER en getItemViewType(position: Int): Int",
+    "options": [
+      "a) position % 2 == 0",
+      "b) items[position].isHeader",
+      "c) position == -1",
+      "d) items[position] == null"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Cuál es el principal beneficio de rendimiento de usar ListAdapter + DiffUtil en lugar de notifyDataSetChanged()?",
+    "options": [
+      "a) Redibuja toda la lista sin necesidad de lógica adicional",
+      "b) Actualiza solo los ítems modificados de forma eficiente",
+      "c) Elimina la necesidad de definir un ViewHolder",
+      "d) Hace que el scroll sea más lento pero más seguro"
+    ],
+    "correct": 1
+  }
+]
