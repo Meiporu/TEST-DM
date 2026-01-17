@@ -9,7 +9,7 @@ Uso:
 + Añadir a VSC
 + Descargar la extensión "[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)"<img width="240" height="200" alt="image" src="https://github.com/user-attachments/assets/3cdb6f9b-ce12-49de-826d-e4e06ba5fc64" />
 
-+ Interactuar con el archivo HTML y seleccionar Open with LiveServer<img width="240" height="200" alt="image" src="https://github.com/user-attachments/assets/6eeeb679-8b17-4713-9258-674574e65ebf" />
++ Interactuar con el archivo HTML y seleccionar Open with LiveServer<img width="240" height="200" alt="image" src="https://github.com/user-attachments/assets/210d7421-d927-498e-91e3-1324ab6aba6c" />
 
 
 *************************************************************************************************
