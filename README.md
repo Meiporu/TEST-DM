@@ -1,7 +1,7 @@
 # DM-Test
 
 Requisitos: 
-- Navegador comtabile con JavaScript
+- Navegador compatible con JavaScript
 
 Uso:
 
